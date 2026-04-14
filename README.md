@@ -6,7 +6,7 @@ This implementation showcases how to design **multi-output architectures with sh
 
 ---
 
-## Project Overview
+## Overview
 
 This project builds a **multi-output neural network** that takes an MNIST image as input and produces:
 
