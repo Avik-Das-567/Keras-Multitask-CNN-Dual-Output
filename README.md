@@ -26,16 +26,16 @@ The architecture is implemented using the **Keras Functional API**, allowing fle
 
 The model follows a **shared backbone + branching heads** design:
 
-### 🔹 Shared Feature Extractor
+### Shared Feature Extractor
 - Convolutional layers for spatial feature extraction
 - Non-linear activations
 - Feature map transformation into a shared latent representation
 
-### 🔹 Skip Connection
+### Skip Connection
 - A residual-style connection is introduced using `Add`
 - Helps preserve lower-level features and stabilize training
 
-### 🔹 Task-Specific Heads
+### Task-Specific Heads
 
 1. **Digit Classification Head**
    - Fully connected layers
@@ -51,11 +51,11 @@ The model follows a **shared backbone + branching heads** design:
 
 ## Data Pipeline
 
-### 🔹 Dataset
+### Dataset
 - Based on the **MNIST dataset**
 - Input: grayscale handwritten digit images
 
-### 🔹 Custom Data Generation
+### Custom Data Generation
 
 A custom function (`generate_data`) is used to:
 - Assign **synthetic color labels** to each image
@@ -83,15 +83,15 @@ Each task contributes to the overall loss, encouraging the model to learn:
 
 ## Training Strategy
 
-### 🔹 Loss Functions
+### Loss Functions
 - Separate categorical losses applied to each output
 - Combined during training
 
-### 🔹 Optimization
+### Optimization
 - Gradient-based optimization (via Keras/TensorFlow backend)
 - Backpropagation flows through both shared and task-specific layers
 
-### 🔹 Callbacks
+### Callbacks
 
 The training process includes:
 - **Custom Logger callback**
