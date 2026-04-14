@@ -1,4 +1,4 @@
-# 📌 Keras Multitask CNN Dual Output
+# Keras Multitask CNN Dual Output
 
 A deep learning project demonstrating **multi-task learning using Keras Functional API**, where a single Convolutional Neural Network (CNN) simultaneously learns two tasks from the same input: **digit classification** and **synthetic color prediction**.
 
@@ -6,7 +6,7 @@ This implementation showcases how to design **multi-output architectures with sh
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 This project builds a **multi-output neural network** that takes an MNIST image as input and produces:
 
@@ -22,7 +22,7 @@ The architecture is implemented using the **Keras Functional API**, allowing fle
 
 ---
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 The model follows a **shared backbone + branching heads** design:
 
@@ -49,7 +49,7 @@ The model follows a **shared backbone + branching heads** design:
 
 ---
 
-## 🔄 Data Pipeline
+## Data Pipeline
 
 ### 🔹 Dataset
 - Based on the **MNIST dataset**
@@ -66,7 +66,7 @@ This transforms a single-task dataset into a **multi-task learning setup**.
 
 ---
 
-## 🎯 Learning Paradigm
+## Learning Paradigm
 
 ### Multi-Task Learning
 
@@ -81,7 +81,7 @@ Each task contributes to the overall loss, encouraging the model to learn:
 
 ---
 
-## ⚙️ Training Strategy
+## Training Strategy
 
 ### 🔹 Loss Functions
 - Separate categorical losses applied to each output
@@ -103,7 +103,7 @@ The training process includes:
 
 ---
 
-## 📊 Model Outputs
+## Model Outputs
 
 The model produces two predictions per input:
 
@@ -116,7 +116,7 @@ These outputs demonstrate how a single network can handle **multiple learning ob
 
 ---
 
-## 🧪 Evaluation & Visualization
+## Evaluation & Visualization
 
 The notebook includes:
 - Sample predictions
@@ -130,7 +130,7 @@ This helps validate:
 
 ---
 
-## 🧩 Key Concepts Demonstrated
+## Key Concepts Demonstrated
 
 - Keras Functional API for non-linear architectures
 - Multi-output model design
@@ -143,7 +143,7 @@ This helps validate:
 
 ---
 
-## 📚 Learning Objectives Achieved
+## Learning Objectives Achieved
 
 - Designing and implementing **multi-task neural networks**
 - Training models with **multiple outputs and objectives**
@@ -153,6 +153,6 @@ This helps validate:
 
 ---
 
-## 🏁 Summary
+## Summary
 
 This project serves as a practical implementation of **multi-task deep learning**, illustrating how a single CNN can be extended to solve multiple related problems efficiently. By combining shared feature extraction with task-specific outputs, it highlights a foundational approach used in more advanced systems such as object detection and multi-modal learning models.
