@@ -11,7 +11,7 @@ This implementation showcases how to design **multi-output architectures with sh
 This project builds a **multi-output neural network** that takes an MNIST image as input and produces:
 
 - **Digit classification output** (0–9)
-- **Color classification output** (synthetically generated label)
+- **Color classification output** (synthetic label generated from input data)
 
 The model leverages:
 - Shared convolutional feature extraction layers
